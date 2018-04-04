@@ -1,1 +1,49 @@
-<h1>Maintenance</h1>
+<!--
+## Introduction
+
+An AMP HTML tutorial - learn the different building blocks of an AMP HTML file. AMP HTML is entirely built on existing web technologies. It achieves reliable performance by restricting some parts of HTML, CSS and JavaScript. To make up for those limitations AMP HTML defines a set of custom elements for rich content beyond basic HTML. This samples shows what's necessary to create a valid AMP HTML file.
+-->
+<!-- -->
+<!-- Doctype declaration is required. -->
+<!doctype html>
+<!-- This tells everyone that this is an AMP file. `<html amp>` works too. -->
+<html ⚡>
+<!-- ## Head -->
+<!-- -->
+<head>
+  <!-- The charset definition must be the first child of the `<head>` tag. -->
+  <meta charset="utf-8">
+  <title>Under Maintenance</title>
+  <!-- The AMP runtime must be loaded as the second child of the `<head>` tag.-->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!--
+    AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.
+  -->
+  <link rel="canonical" href="https://rendy1287.github.io/index2.html">
+  <!--
+    AMP HTML files require a viewport declaration. It's recommended to include initial-scale=1.
+  -->
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <!--
+    CSS must be embedded inline.
+  -->
+  <style amp-custom>
+    h1 {
+      color: red;
+    }
+  </style>
+  <!--
+    The AMP boilerplate.
+  -->
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<!-- ## Body -->
+<!-- -->
+<body>
+  <!--
+    Most HTML tags can be used directly in AMP HTML.
+  -->
+  <h1>Under Maintenance!</h1>
+
+</body>
+</html>
